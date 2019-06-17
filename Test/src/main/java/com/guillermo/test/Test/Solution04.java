@@ -17,6 +17,11 @@ public class Solution04 {
 	public static void main(String[] args) {
 		
 		int number = 3;
+		printParenthesis(number);
+	}
+	
+	static void printParenthesis(int number) {
+		
 		printRoundBrackets(number);
 		System.out.println();
 		
@@ -44,16 +49,6 @@ public class Solution04 {
 		System.out.print(BRACKET_CLOSE);
 	}
 	
-	static void printNestedBrackets2(int number) {
-		
-		if(number == 0)
-			return;
-		
-		System.out.print(BRACKET_OPEN);
-		printRoundBrackets(--number);
-		//printNestedBrackets(--number);
-		System.out.print(BRACKET_CLOSE);
-	}
 	
 	static void printRoundBrackets(int number) {
 		
